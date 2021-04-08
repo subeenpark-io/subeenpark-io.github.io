@@ -4,7 +4,12 @@ Using `preload` so that page rendering doesn't get blocked.
 Fill in `href`. You may have to adjust `as` and `onload`/`rel`, depending on content.
 -->
 <link href="<path/to/content.css>" rel="preload" as="style" onload="this.rel='stylesheet'">
-
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+<style>
+    * {
+        font-family: 'NanumSquare';
+    }
+</style>
 <!--
 Fallback in case JavaScript isn't enabled.
 Fill in `href`. You may have to adjust `rel`.
