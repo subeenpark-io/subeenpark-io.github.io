@@ -68,7 +68,7 @@ import {
             }
           }),
           finalize(() => {
-            toc.classList.remove('affix');
+            scrollspy.parentNode.removeChild(scrollspy);
           }),
         );
       }),
@@ -82,6 +82,8 @@ import {
 
         const intersecting = new Set();
         const top = new WeakMap();
+
+        const hasGuardRail = getComputedStyle(toc).overscrollBehaviorY === 'contain';
 
         const toObserve = Array.from(toc.querySelectorAll('li'))
           .map((el) => el.children[0].getAttribute('href') || '')
@@ -111,8 +113,14 @@ import {
               const el = toc.querySelector(`a[href="#${curr.id}"]`);
               if (el) {
                 el.style.fontWeight = 'bold';
-                clearTimeout(timer);
-                timer = setTimeout(() => scrollIntoView(el, { scrollMode: 'if-needed' }), 100);
+                if (hasGuardRail) {
+                  clearTimeout(timer);
+                  timer = setTimeout(() => {
+                    if (toc.classList.contains('affix')) {
+                      scrollIntoView(el, { scrollMode: 'if-needed' });
+                    }
+                  }, 100);
+                }
               }
             }
           }),
