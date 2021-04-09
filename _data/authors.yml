@@ -8,11 +8,10 @@ author1:            Subeen
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Self-taught newbie developer!
+    Interested in HCI & currently a generalist with variety of interests.
     
-    Open `_data/authors.yml` to edit this text.
+  # Open `_data/authors.yml` to edit this text.
 
   # This photo will be used in the about section
   picture:
@@ -26,9 +25,9 @@ author1:            Subeen
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    #twitter:         <username>
-    github:          subeenpark-io
-    email:           psb021414@gmail.com
+    twitter:         <username>
+    github:          <username>
+    # email:           <mail@domain.tld>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
@@ -67,16 +66,16 @@ author1:            Subeen
     # keybase          <username>
 
 # Another author (optional)
-# author2:
-#   name:              <firtname> <lastname>
-#   email:             <mail@domain.tld>
-#   about:             |
-#     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-#     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-#     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+author2:
+  name:              <firtname> <lastname>
+  email:             <mail@domain.tld>
+  about:             |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-#     Open `_data/authors.yml` to edit this text.
+    Open `_data/authors.yml` to edit this text.
 
-#   picture:           https://placehold.it/128x128
-#   twitter:           <username>
-#   github:            <username>
+  picture:           https://placehold.it/128x128
+  twitter:           <username>
+  github:            <username>
