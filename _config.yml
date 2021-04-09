@@ -53,20 +53,14 @@ author:
 
 # Add links to the sidebar.
 menu:
-  
   - title: Résumé*
     url: /resume/
   - title: Projects
     url: /projects/
-  - title: DevLog
-    url: /devlogs/
   - title: Blog
     url: /blog/
-
-   - title: Documentation
+  - title: Documentation
     url: /docs/
-
-  
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
