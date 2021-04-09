@@ -31,6 +31,21 @@ basics:
     - network: "LinkedIn"
       username: "Subeen Park"
       url: ""
+
+education:
+  - institution: "Seoul National University"
+    area: |
+      "Earth and Environmental Sciences
+       Business Administration
+       System Semiconductor Engieering for AI"
+    studyType: "Bachelor"
+    startDate: "2018-03-01"
+    endDate: ""
+    # gpa: "4.0"
+    courses:
+      - "DB1101 - Basic SQL"
+      - "CS2011 - Java Introduction"
+
 work:
   - company: "SSAI(Systm Semiconductor Engineering for AI"
     position: "Undergraduate Researcher"
@@ -68,16 +83,7 @@ volunteer:
     summary: "Global movement of free coding clubs for young people."
     highlights:
       - "Awarded 'Teacher of the Month'"
-education:
-  - institution: "University of Oklahoma"
-    area: "Information Technology"
-    studyType: "Bachelor"
-    startDate: "2011-06-01"
-    endDate: "2014-01-01"
-    gpa: "4.0"
-    courses:
-      - "DB1101 - Basic SQL"
-      - "CS2011 - Java Introduction"
+
 awards:
   - title: "Digital Compression Pioneer Award"
     date: "2014-11-01"
