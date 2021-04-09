@@ -26,6 +26,7 @@ GEM
     concurrent-ruby (1.1.8)
     dnsruby (1.61.5)
       simpleidn (~> 0.1)
+    duktape (2.6.0.0)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -207,8 +208,13 @@ GEM
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
+    katex (0.6.1)
+      execjs (~> 2.7)
     kramdown (2.3.1)
       rexml
+    kramdown-math-katex (1.0.1)
+      katex (~> 0.4)
+      kramdown (~> 2.0)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
@@ -268,12 +274,14 @@ PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
+  duktape
   github-pages
   jekyll (~> 3.8)
   jekyll-avatar
   jekyll-compose
   jekyll-include-cache
   jekyll-theme-hydejack!
+  kramdown-math-katex
 
 BUNDLED WITH
    2.2.15
