@@ -19,7 +19,7 @@
 lang: en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title: Hydejack
+title: Subeen Park
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -46,6 +46,7 @@ author:
   about: Self-taught newbie developer🐣!
   social:
     github: subeenpark-io
+    email: psb021414@gmail.com
 
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
