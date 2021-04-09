@@ -2,12 +2,12 @@
 # If you don't have a JSON Resume you can just edit this YAML file instead.
 # See also: <https://jsonresume.org/>.
 basics:
-  name: "Richard Hendricks"
-  label: "Programmer"
+  name: "Subeen Park"
+  label: ""
   picture: "https://placehold.it/240x240"
-  email: ""
-  phone: "(912) 555-4321"
-  website: "https://piedpiper.com"
+  email: "psb021414@gmail.com"
+  # phone: "(912) 555-4321"
+  website: "https://subeen.io"
   summary: >
     Richard hails from Tulsa.
     He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!)
@@ -19,11 +19,11 @@ basics:
     He could tell you about it, but THAT would NOT be a “length-limited” conversation!
     Open `_data/resume.yml` to edit this text.
   location:
-    address: "2712 Broadway St"
-    postalCode: "CA 94115"
-    city: "San Francisco"
-    countryCode: "US"
-    region: "California"
+    # address: "2712 Broadway St"
+    # postalCode: "CA 94115"
+    # city: "San Francisco"
+    countryCode: "KOR"
+    region: "Seoul"
   profiles:
     - network: "Twitter"
       username: "RHendricksCEO"
