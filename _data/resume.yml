@@ -47,7 +47,7 @@ education:
       - "CS2011 - Java Introduction"
 
 work:
-  - company: "SSAI(Systm Semiconductor Engineering for AI"
+  - company: "SSAI"
     position: "Undergraduate Researcher"
     website: "https://ssai.snu.ac.kr/"
     startDate: "2021-03-09"
@@ -60,9 +60,10 @@ work:
       - "Built an algorithm for artist to detect if their music was violating copy right infringement laws"
       - "Successfully won Techcrunch Disrupt"
       - "Optimized an algorithm that holds the current world record for Weisman Scores"
-  - company: "SSAI(Systm Semiconductor Engineering for AI"
+
+  - company: "HCI+D"
     position: "Undergraduate Researcher"
-    website: "https://ssai.snu.ac.kr/"
+    website: "http://hcid.snu.ac.kr/"
     startDate: "2021-03-09"
     endDate: ""
     summary: >
