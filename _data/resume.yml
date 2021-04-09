@@ -25,17 +25,17 @@ basics:
     countryCode: "KOR"
     region: "Seoul"
   profiles:
-    - network: "Twitter"
-      username: "RHendricksCEO"
+    - network: "GitHub"
+      username: "subeenpark-io"
       url: ""
     - network: "LinkedIn"
-      username: "Richard Hendricks"
+      username: "Subeen Park"
       url: ""
 work:
-  - company: "Pied Piper"
-    position: "CEO/President"
-    website: "https://piedpiper.com"
-    startDate: "2013-12-01"
+  - company: "SSAI(Systm Semiconductor Engineering for AI"
+    position: "Undergraduate Researcher"
+    website: "https://ssai.snu.ac.kr/"
+    startDate: "2021-03-09"
     endDate: ""
     summary: >
       Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
@@ -45,6 +45,20 @@ work:
       - "Built an algorithm for artist to detect if their music was violating copy right infringement laws"
       - "Successfully won Techcrunch Disrupt"
       - "Optimized an algorithm that holds the current world record for Weisman Scores"
+  - company: "SSAI(Systm Semiconductor Engineering for AI"
+    position: "Undergraduate Researcher"
+    website: "https://ssai.snu.ac.kr/"
+    startDate: "2021-03-09"
+    endDate: ""
+    summary: >
+      Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
+      consistently fielded high Weisman Scores™ that are not merely competitive,
+      but approach the theoretical limit of lossless compression.
+    highlights:
+      - "Built an algorithm for artist to detect if their music was violating copy right infringement laws"
+      - "Successfully won Techcrunch Disrupt"
+      - "Optimized an algorithm that holds the current world record for Weisman Scores"
+
 volunteer:
   - organization: "CoderDojo"
     position: "Teacher"
@@ -96,8 +110,8 @@ interests:
     keywords:
       - "Ferrets"
       - "Unicorns"
-references:
-  - name: "Erlich Bachman"
-    reference: >
-      It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
-      Company proved that he will be a valuable addition to any company.
+# references:
+#   - name: "Erlich Bachman"
+#     reference: >
+#       It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
+#       Company proved that he will be a valuable addition to any company.
