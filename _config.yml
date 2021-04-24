@@ -57,7 +57,8 @@ author:
 # Add links to the sidebar.
 menu:
   - title: Résumé*
-    url: /resume/
+    url: https://drive.google.com/file/d/1vT9lRafHG70E3fusq05jpaO4lIBBaQdS/view?usp=sharing
+    # url: /resume/
   - title: Projects
     url: /projects/
   - title: Blog
