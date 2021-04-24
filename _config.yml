@@ -56,15 +56,15 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title: Résumé*
-    url: https://drive.google.com/file/d/1vT9lRafHG70E3fusq05jpaO4lIBBaQdS/view?usp=sharing
-    # url: /resume/
   - title: Projects
     url: /projects/
   - title: Blog
     url: /blog/
-  - title: Documentation
-    url: /docs/
+  # - title: Documentation
+  #   url: /docs/
+  - title: Résumé*
+    url: https://drive.google.com/file/d/1Dmoy5U8tQhzmV4BjI8NBDlEHDftzEiiu/view?usp=sharing
+    # url: /resume/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
