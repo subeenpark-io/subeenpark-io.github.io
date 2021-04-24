@@ -60,8 +60,10 @@ menu:
     url: /projects/
   - title: Blog
     url: /blog/
-  # - title: Documentation
-  #   url: /docs/
+  - title: Documentation
+    url: /docs/
+  # - title: About
+  #   url: /about/
   - title: Résumé*
     url: https://drive.google.com/file/d/1Dmoy5U8tQhzmV4BjI8NBDlEHDftzEiiu/view?usp=sharing
     # url: /resume/
@@ -69,15 +71,15 @@ menu:
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
-  - title: LICENSE
-    url: /LICENSE/
-  - title: NOTICE
-    url: /NOTICE/
-  - title: CHANGELOG
-    url: /CHANGELOG/
+  # - title: LICENSE
+  #   url: /LICENSE/
+  # - title: NOTICE
+  #   url: /NOTICE/
+  # - title: CHANGELOG
+  #   url: /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright: © 2021. All rights reserved.
+copyright: © 2021 Subeen Park. All rights reserved.
 
 # Format of the permalinks
 permalink: /blog/:categories/:year-:month-:day-:title/
