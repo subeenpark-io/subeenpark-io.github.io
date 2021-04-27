@@ -2,7 +2,7 @@
 title: DEV-LOG
 description: >
   This section is for documenting my dev-logs. Usually I am going to post stuffs realted with D3.js, React.js, SwiftUI, and Django.
-hide_description: false
+hide_description: true
 sitemap: false
 ---
 
