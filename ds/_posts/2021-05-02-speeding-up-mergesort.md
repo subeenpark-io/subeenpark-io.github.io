@@ -3,9 +3,13 @@ layout: post
 title: MergeSort의 성능을 개선하는 방법
 description: >
   Mergesort의 성능을 개선하는 방법을 알아보자. 특히 Switching Mergesort!
+categories: [ds]
 sitemap: false
 hide_last_modified: true
 ---
+
+얼마 전 자료구조 시험을 봤는데 시험지를 앞에 딱 제출하는 순간 풀이가 떠오른 문제가 있다. 내 기준에서는 꽤 참신한 알고리즘이라고 생각되서 기억이 살아있을 때 정리해놓고자 이 포스팅을 적는다. 내 15점 잘가... 시험이 흥미로웠으니 되었다...
+{:.faded}
 
 Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. _Aenean eu leo quam._ Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
