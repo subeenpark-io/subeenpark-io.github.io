@@ -5,6 +5,7 @@ description: >
   Mergesort의 성능을 개선하는 방법을 알아보자. 특히 Switching sort!
 sitemap: false
 hide_last_modified: true
+related_posts:
 ---
 
 얼마 전 자료구조 시험을 봤는데 시험지를 앞에 딱 제출하는 순간 풀이가 떠오른 문제가 있다. 내 기준에서는 꽤 흥미로운 알고리즘이라고 생각되서 기억이 살아있을 때 정리해놓고자 이 포스팅을 적는다. 내 15점 잘가😇 시험이 흥미로웠으니 되었다... ~~흥미롭지만... 그래도 교수님 미워요 엉엉~~
@@ -111,4 +112,4 @@ MergeSort의 경우 Average case와 Worst case time complexity 둘 모두 $$\Ome
 
 ## Reference
 
-전체적으로 [Princeton CSE](https://algs4.cs.princeton.edu/22mergesort/)의 글을 참고했다. 들어가보면 sorting 자체에 대한 시각화도 흥미롭게 되어있어서 한번 쯤 읽어볼 만한 글이라고 생각된다!
+전체적으로 [Princeton CSE](https://algs4.cs.princeton.edu/22mergesort/)의 글을 참고했다. 사실 쓰다보니 거의 번역에 가까워졌는데, 들어가보면 sorting 자체에 대한 시각화도 흥미롭게 되어있어서 한번 쯤 읽어볼 만한 글이라고 생각된다!
