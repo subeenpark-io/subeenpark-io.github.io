@@ -2,14 +2,16 @@
 layout: post
 title: MergeSort의 성능을 개선하는 방법
 description: >
-  Mergesort의 성능을 개선하는 방법을 알아보자. 특히 Switching Mergesort!
+  Mergesort의 성능을 개선하는 방법을 알아보자. 특히 Switching sort!
 sitemap: false
 hide_last_modified: true
 ---
 
-얼마 전 자료구조 시험을 봤는데 시험지를 앞에 딱 제출하는 순간 풀이가 떠오른 문제가 있다. 내 기준에서는 꽤 흥미로운 알고리즘이라고 생각되서 기억이 살아있을 때 정리해놓고자 이 포스팅을 적는다. 내 15점 잘가😇 시험이 흥미로웠으니 되었다...
+얼마 전 자료구조 시험을 봤는데 시험지를 앞에 딱 제출하는 순간 풀이가 떠오른 문제가 있다. 내 기준에서는 꽤 흥미로운 알고리즘이라고 생각되서 기억이 살아있을 때 정리해놓고자 이 포스팅을 적는다. 내 15점 잘가😇 시험이 흥미로웠으니 되었다... ~~흥미롭지만... 그래도 교수님 미워요 엉엉~~
 
 ## 일반적으로 배우는 MergeSort
+
+MergeSort의 경우 Average case와 Worst case time complexity 둘 모두 $$\Omega(nlogn)$$이기 때문에 Average case $$\Omega(n^2)$$ 인 기초적인 정렬 방식(BubbleSort, Selection Sort, InsertionSort)에 비해 우수한 성능을 보인다. 뿐만 아니라 QuickSort의 경우 Average case에서는 매우 뛰어난 성능을 보이지만 Worst case의 경우 $$\Omega(n^2)$$의 시간 복잡도를 가지기 때문에 최악의 경우를 고려했을 때 MergeSort는 꽤 매력적인 정렬 방식이다. 이번 포스팅에서는 MergeSort의 성능을 더욱 높일 수 있는 방법을 알아보자.
 
 ```java
 // stably merge a[lo .. mid] with a[mid+1 ..hi] using aux[lo .. hi]
@@ -46,15 +48,22 @@ hide_last_modified: true
     }
 ```
 
-### 방법 1.
+### 방법 1. InsertionSort for small subarrays!
 
-일반적으로 InsertionSort와 MergeSort 둘 모두 $$ \Omega(n^2) $$.의 시간복잡도를 가진다.
+보편적으로 배우는 MergeSort의 경우 base case인 $$N = 1$$을 제외하고 모든 subarray에 대해서 재귀 호출을 시행한다. 이를 **subarray가 일정 크기 이하가 되면 재귀 호출 대신 InsertionSort를 사용하는 방식으로 변경** 시 (참고 자료에 따르면) 속도를 10-15% 정도 감축할 수 있다고 한다. InsertionSort의 경우 평균적으로 $$\Omega(n^2)$$의 시간복잡도를 가지고 MergeSort의 경우 $$\Omega(nlogn)$$의 시간복잡도를 가지기 때문에 크기가 큰 input의 경우 MergeSort가 더 우수한 성능을 보이지만, 크기가 작은 input의 경우 오히려 InsertionSort를 쓰는 것이 이득일 수 있다.
 
-### 방법 2.
+### 방법 2. Test whether array is already in order!
 
-### 방법 3.
+**`Merge()`를 재귀적으로 호출하기 전에 subarray가 정렬되었는지의 여부를 우선적으로 확인**하고 `a[mid] <= a[mid+1]` 일 경우 `merge()`의 호출을 생략한다. 이를 통해서 재귀적 호출은 여전히 일어나지만 sorted subarray에 대한 running time을 선형으로 개선할 수 있다. 경우 재귀적 호출은 여전히 일어나지만
+
+### 방법 3. Eliminate the copy to the auxiliary array!
+
+시험 문제에 나왔던 알고리즘! ~~물론 내 답지는 반쯤 완성되다 말았다...~~ 이 방식을 통해서는 병합 과정에서 auxiliary array를 복제하기 위해 소요되는 시간을 제거할 수 있다. 이 방법에서는 두 가지 sort method가 필요하다. 한 방법의 경우 ** gived array에서 input을 받아 auxiliary array에 집어넣고**, 또 다른 방법의 경우 **auxiliary array에서 input을 받아 sorted output을 given array에 집어넣는다.**
 
 ## 개선된 MergeSort
+
+세 가지 개선 방법을 도입한 코드는 아래와 같다.
+전체 코드는 출처에서 확인할 수 있다.
 
 ```java
  private static void merge(Comparable[] src, Comparable[] dst, int lo, int mid, int hi) {
@@ -100,115 +109,6 @@ hide_last_modified: true
     }
 ```
 
-### Reference
+## Reference
 
-- 코드 출처: https://algs4.cs.princeton.edu/22mergesort/
-
-Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. _Aenean eu leo quam._ Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
-
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
-
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-
-## Inline HTML elements
-
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
-
-- **To bold text**, use `**To bold text**`.
-- _To italicize text_, use `*To italicize text*`.
-- Abbreviations, like HTML should be defined like this `*[HTML]: HyperText Markup Language`.
-- Citations, like <cite>&mdash; Mark otto</cite>, should use `<cite>`.
-- ~~Deleted~~ text should use `~~deleted~~` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
-
-Most of these elements are styled by browsers with few modifications on our part.
-
-## Heading 2
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-### Heading 3
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.
-
-#### Heading 4
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.
-
-##### Heading 5
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.
-
-###### Heading 6
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.
-
-## Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those
-// arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-```
-
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-- Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-- Donec id elit non mi porta gravida at eget metus.
-- Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-HyperText Markup Language (HTML)
-: The language used to describe and define the content of a Web page
-
-Cascading Style Sheets (CSS)
-: Used to describe the appearance of Web content
-
-JavaScript (JS)
-: The programming language used to build advanced Web sites and applications
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![800x400](https://placehold.it/800x400 "Large example image")
-
-![400x200](https://placehold.it/400x200 "Medium example image")
-
-![200x200](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-| Name       | Upvotes     | Downvotes   |
-| :--------- | :---------- | :---------- |
-| Alice      | 10          | 11          |
-| Bob        | 4           | 3           |
-| Charlie    | 7           | 9           |
-| ========== | =========== | =========== |
-| Totals     | 21          | 23          |
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-_[HTML]: HyperText Markup Language
-_[CSS]: Cascading Style Sheets \*[JS]: JavaScript
+전체적으로 [Princeton CSE](https://algs4.cs.princeton.edu/22mergesort/)의 글을 참고했다. 들어가보면 sorting 자체에 대한 시각화도 흥미롭게 되어있어서 한번 쯤 읽어볼 만한 글이라고 생각된다!
