@@ -432,9 +432,13 @@ jekyll_compose:
 
 
 ### code line number
-markdown: kramdown
+# markdown: kramdown
+# kramdown:
+#     highlighter: rouge
+#     syntax_highlighter_opts:
+#         block:
+#             line_numbers: true
+
 kramdown:
-    highlighter: rouge
-    syntax_highlighter_opts:
-        block:
-            line_numbers: true
+  math_engine:         katex
+  math_engine_opts:    {}
