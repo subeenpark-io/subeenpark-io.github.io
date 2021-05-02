@@ -428,3 +428,13 @@ jekyll_compose:
       links:
         - title: Project Link
           url: https://example.com
+
+
+
+### code line number
+markdown: kramdown
+kramdown:
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
