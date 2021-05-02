@@ -3,6 +3,7 @@ layout: post
 title: MergeSort의 성능을 개선하는 방법
 description: >
   Mergesort의 성능을 개선하는 방법을 알아보자. 특히 Switching Mergesort!
+categories: [ds]
 sitemap: false
 hide_last_modified: true
 ---
