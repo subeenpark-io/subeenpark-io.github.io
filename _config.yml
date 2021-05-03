@@ -24,8 +24,8 @@ title: Subeen Park
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description: >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  Studies everything that makes our lives better! 
+  HCI, dev, doodle, etc. Everything about Subeen Park.
 
 # A shorter description for the sidebar.
 tagline: |
@@ -343,6 +343,8 @@ plugins:
   - jekyll-include-cache
   - jekyll-last-modified-at
   - jekyll-avatar
+  
+
 
 # SEO Tag
 # ---------------------------------------------------------------------------------------
@@ -414,15 +416,13 @@ jekyll_compose:
     posts:
       layout: post
       description: >
-        A short ~160 character description of your post for search engines,
-        social media previews, etc.
+        Screenshot of my life
       image:
         path: /assets/img/sidebar-bg.jpg
     projects:
       layout: project
       description: >
-        A short ~160 character description of your post for search engines,
-        social media previews, etc.
+        What I do most of the time
       image:
         path: /assets/img/sidebar-bg.jpg
       links:

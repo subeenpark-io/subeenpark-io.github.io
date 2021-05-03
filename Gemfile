@@ -25,3 +25,4 @@ gem "jekyll-include-cache", group: :jekyll_plugins
 gem "jekyll-avatar"
 gem "kramdown-math-katex"
 gem "duktape"
+gem 'jekyll-sitemap'

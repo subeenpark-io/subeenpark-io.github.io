@@ -280,6 +280,7 @@ DEPENDENCIES
   jekyll-avatar
   jekyll-compose
   jekyll-include-cache
+  jekyll-sitemap
   jekyll-theme-hydejack!
   kramdown-math-katex
 
