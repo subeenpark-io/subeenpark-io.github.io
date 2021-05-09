@@ -61,7 +61,7 @@ menu:
   - title: Blog
     url: /blog/
   - title: Dev-Log
-    url: /dev/
+    url: /blog/dev/
   # - title: About
   #   url: /about/
   - title: Résumé*
@@ -294,7 +294,7 @@ hydejack:
     precache_assets:
       - /assets/img/swipe.svg
 
-# Collections
+# 
 # ----------------------------------------------------------------------------------------
 
 collections:
@@ -311,10 +311,6 @@ collections:
     output: true
 
   dev:
-    permalink: /dev/:path/
-    output: true
-
-  devs:
     permalink: /blog/devs/:path/
     output: true
 
