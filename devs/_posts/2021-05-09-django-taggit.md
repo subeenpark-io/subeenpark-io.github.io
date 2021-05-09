@@ -12,7 +12,7 @@ tags: [django]
 [django-taggit](https://pypi.org/project/django-taggit/) 패키지는 django 서비스에 쉽게 태그를 할 수 있도록 도와주는 앱이다. 약간의 커스텀을 통해서 우리가 일반적으로 인스타그램 등 기타 SNS에서 쉽게 볼 수 있는 해시태그 기능을 구현하는 법을 알아보자.
 ...{:.message}
 
-### Taggit 패키지 설치
+### 1. Taggit 패키지 설치
 
 아래 코드를 터미널에 입력해 패키지를 설치하자.
 
@@ -20,7 +20,7 @@ tags: [django]
 pip install django-taggit
 ```
 
-### `settings.py` 수정
+### 2. `settings.py` 수정
 
 `INSTALLED_APPS`에 taggit을 추가한다.
 
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### `${app_name}/models.py` 수정
+### 3. `${app_name}/models.py` 수정
 
 ##### 관련 함수 import
 
@@ -93,7 +93,7 @@ class Portfolio(models.Model):
 
 `post`(여기서는 `Portfolio`) 모델 내부에 `tags` field를 만든다. 이 때 `tags`의 데이터 타입은 `TaggableManager`로, 이 객체가 태그의 생성, 삭제 등을 관리한다.
 
-##### `views.py` 수정
+### 4. `views.py` 수정
 
 `form.save_m2m()`을 추가해서 `MODEL.save()`후 입력된 tag를 별도로 저장해주는 과정을 거친다. update 역시 비슷한 방식으로 작업하지만 tag를 clear 하고 다시 저장해주어야 한다.
 
@@ -112,7 +112,7 @@ def portfolio_create(request):
             # ...
 ```
 
-##### `utils.py` 수정
+### 5.`utils.py` 수정
 
 ```py
 def hashtag_splitter(tag_string):
@@ -125,7 +125,7 @@ def hashtag_joiner(tags):
 
 기존의 `taggit` 패키지는 사용자의 태그 입력을 `[태그1, 태그2, ...]`와 같이 콤마를 구분자로 이용한다. 내가 개발중인 서비스에서는 `#`를 이용해서 구분자를 두기 위해 `hashtag_splitter()` 함수와 `hashtag_joiner()` 함수를 커스텀하고 커스텀된 함수가 작동할 수 있도록 `settings.py에 등록했다.`
 
-##### (Optional) `settings.py` 에 custom `hashtag_splitter/joiner` 추가
+##### `settings.py` 에 custom `hashtag_splitter/joiner` 추가
 
 ```
 # taggit
@@ -133,3 +133,5 @@ TAGGIT_CASE_INSENSITIVE = True
 TAGGIT_TAGS_FROM_STRING = 'portfolio.utils.hashtag_splitter'
 TAGGIT_STRING_FROM_TAGS = 'portfolio.utils.hashtag_joiner'
 ```
+
+이러한 방식으로 `taggit` 모듈을 이용해 검색 기능을 구현할 수 있다.
