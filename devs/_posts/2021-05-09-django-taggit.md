@@ -5,7 +5,6 @@ description: >
   Django-taggit과 query parameter를 이용해 포스트에 해시태그를 달고 검색 기능을 구현해보자.
 sitemap: false
 hide_last_modified: true
-related_posts:
 tags: [django]
 ---
 
