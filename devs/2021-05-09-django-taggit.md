@@ -6,4 +6,5 @@ description: >
 sitemap: false
 hide_last_modified: true
 related_posts:
+tags: [Django]
 ---
