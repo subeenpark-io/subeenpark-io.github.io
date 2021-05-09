@@ -314,6 +314,12 @@ collections:
     permalink: /dev/:path/
     output: true
 
+  devs:
+    permalink: /blog/devs/:path/
+    output: true
+
+  
+
 
 # File inclusion/exclusion
 # ----------------------------------------------------------------------------------------
