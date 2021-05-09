@@ -5,7 +5,7 @@ description: >
   진로 드리프트!
 sitemap: false
 hide_last_modified: true
-related_posts:
+tags: []
 ---
 
 얼마 전 중간고사도 다 끝나고 중요한 인턴 지원도 마쳤다. 아무리 생각해도 내가 지금 HCI를 공부하고자 이런 저런 시도를 하고 있는게 웃기고 신기해서 글로 기록해둔다.
