@@ -310,6 +310,11 @@ collections:
     permalink: /projects/:path/
     output: true
 
+  dev:
+    permalink: /dev/:path/
+    output: true
+
+
 # File inclusion/exclusion
 # ----------------------------------------------------------------------------------------
 

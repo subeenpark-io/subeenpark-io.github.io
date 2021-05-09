@@ -5,7 +5,7 @@ layout: blog
 # The title of the tag's page.
 title: DEV-LOG
 
-show_collections: devs
+show_collections: dev
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
