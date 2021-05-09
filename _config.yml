@@ -60,8 +60,8 @@ menu:
     url: /projects/
   - title: Blog
     url: /blog/
-  - title: Dev
-    url: /devs/
+  - title: Dev-Log
+    url: /dev/
   # - title: About
   #   url: /about/
   - title: Résumé*
