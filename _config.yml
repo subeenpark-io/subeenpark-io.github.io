@@ -61,7 +61,7 @@ menu:
   - title: Blog
     url: /blog/
   - title: Dev
-    url: /blog/devs/
+    url: /dev/
   # - title: About
   #   url: /about/
   - title: Résumé*
