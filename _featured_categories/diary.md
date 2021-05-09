@@ -13,7 +13,7 @@ description: >
   단상들.
 
 # (Optional) You can disable grouping posts by date.
-no_groups: true
+no_groups: false
 # Exclude this example category from the sitemap.
 # DON'T USE THIS SETTING IN YOUR CATEGORIES!
 sitemap: false
