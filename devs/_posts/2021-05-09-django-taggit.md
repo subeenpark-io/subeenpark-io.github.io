@@ -3,7 +3,7 @@ layout: post
 title: Django Taggit을 이용한 해시태그 검색 기능 구현하기
 description: >
   Django-taggit과 query parameter를 이용해 포스트에 해시태그를 달고 검색 기능을 구현해보자.
-sitemap: false
+sitemap: true
 hide_last_modified: true
 tags: [django]
 ---

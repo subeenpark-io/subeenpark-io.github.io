@@ -3,7 +3,7 @@ layout: post
 title: HCI로 흘러들어오기까지
 description: >
   진로 드리프트!
-sitemap: false
+sitemap: true
 hide_last_modified: true
 tags: []
 ---
