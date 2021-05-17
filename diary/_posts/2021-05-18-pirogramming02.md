@@ -1,14 +1,13 @@
 ---
 layout: post
 title: 비전공자를 위한 웹개발 동아리 피로그래밍 후기 2. 프로젝트 후기 및 개인적인 소회
-description: 비전공자를 위한 웹개발 동아리 피로그래밍 15기(2020년 겨울) 후기: 프로젝트 후기 및 개인적인 소회
+description: 비전공자를 위한 웹개발 동아리 피로그래밍 15기(2020년 겨울) 후기 -- 프로젝트 후기 및 개인적인 소회
 sitemap: true
 hide_last_modified: true
 tags: [piro]
 related_posts:
   - diary/_posts/2021-05-18-pirogramming00.md
   - diary/_posts/2021-05-18-pirogramming01.md
-
 ---
 
 ~~기록을 미루면 안되는 이유~~가 아니라 드디어 마지막 편이다. 1달 동안 배운 것을 적용시켜서 프로젝트를 만드는 과정! 그리고 함께 서비스를 발전시켜나갈 사람들을 모으기까지~~
