@@ -33,7 +33,7 @@ tags: [piro]
 
 - **모집 시기**: 2020.11.23 ~ 2020.12.20
 - **서류 합격 발표**: 2020.12.17
-- **관련계정** : [웹사이트](http://pirogramming.com) | [인스타그램](https://www.instagram.com/pirogramming_official/) | [페이스북](https://www.facebook.com/p.rogramming3k)
+- **관련계정** : [웹사이트](http://pirogramming.com), [인스타그램](https://www.instagram.com/pirogramming_official/), [페이스북](https://www.facebook.com/p.rogramming3k)
 
 #### 서류 전형 문항
 
