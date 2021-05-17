@@ -1,13 +1,13 @@
 ---
 layout: post
+related_posts:
+  - diary/_posts/2021-05-18-pirogramming00.md
+  - diary/_posts/2021-05-18-pirogramming02.md
 title: 비전공자를 위한 웹개발 동아리 피로그래밍 후기 1. 세션 커리큘럼 및 과제
 description: 비전공자를 위한 웹개발 동아리 피로그래밍 15기(2020년 겨울) 후기 -- 세션 커리큘럼 및 과제
 sitemap: true
 hide_last_modified: true
 tags: [piro]
-related_posts:
-  - diary/_posts/2021-5-18-pirogramming00.md
-  - diary/_posts/2021-5-18-pirogramming02.md
 ---
 
 지난 겨울 방학에는 진짜...진짜 많은 것을 배웠다. ~~그럼에도 인문 교양이 제일 싫었다. 코딩정도면 괜찮지 ㅎ~~ 동아리 이름이 피로그래밍인만큼 커리큘럼이 다소 피로하다. 그렇지만 인생에 꽁짜가 어딨겠움 원래 배우는 일은 고되고 어려운 법이다! 그래도 같이 해줄 전우들이 있으니 좋지 않은가~~
