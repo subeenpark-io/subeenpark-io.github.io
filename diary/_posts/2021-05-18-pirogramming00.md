@@ -1,7 +1,7 @@
 ---
 layout: post
 related_posts:
-  - diary/_posts/2021-05-18-pirogramming00.md
+  - diary/_posts/2021-05-18-pirogramming01.md
   - diary/_posts/2021-05-18-pirogramming02.md
 title: 비전공자를 위한 웹개발 동아리 피로그래밍 후기 0. 서류 및 면접 전형, 지원 동기
 description: 비전공자를 위한 웹개발 동아리 피로그래밍 15기(2020년 겨울) 후기 -- 서류 및 면접 전형, 그리고 지원 동기
