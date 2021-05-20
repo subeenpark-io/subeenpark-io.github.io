@@ -4,7 +4,7 @@ related_posts:
   - diary/_posts/2021-05-18-pirogramming00.md
   - diary/_posts/2021-05-18-pirogramming02.md
 title: 비전공자를 위한 웹개발 동아리 피로그래밍 후기 1. 세션 커리큘럼 및 과제
-description: 비전공자를 위한 웹개발 동아리 피로그래밍 15기(2020년 겨울) 후기 -- 세션 커리큘럼 및 과제
+description: 비전공자를 위한 웹개발 동아리 피로그래밍 14기(2020년 겨울) 후기 -- 세션 커리큘럼 및 과제
 sitemap: true
 hide_last_modified: true
 tags: [piro]
