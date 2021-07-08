@@ -1,15 +1,17 @@
 ---
 layout:      project
-title:       Collaborative CBT App for People with Anxity Problems
-date:        1 May 2021
+title:       AutoUI: Context-Aware Adaptive UI Generation for Working with AI 
+date:        1 July 2021
 image:
-  path:       /assets/img/projects/hello-i-m-nik-MrqlyH6J8Yw-unsplash.jpg
+  path:       /assets/img/projects/franki-chamaki-1K6IQsQbizI-unsplash.jpg
 caption:     
 description: >
   Collaborative mobile peer support platform for people with anxiety problems based on CBT and DBT theories
 links:
 featured:    false
 ---
+
+
 
 
 
