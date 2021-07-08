@@ -15,17 +15,13 @@ featured:    false
 
 ## Motivation
 
-How do you treat your anxiety? Life is overwhelming from time to time, and it is never easy to deal with those panic attacks in a non-toxic way. It is undeniable that life has its ups and downs, however, we still have a chance to cope with our downs in an adequate method. Do some meditations, clarify your feelings and their reasons, and plan how you will keep your face and let things just slide over next time when you face it. Above all, do all these things **TOGETHER**!
+It is certainly true that many industries are trying to adopt AI in their workflow. However, there are many cases that still need human intervention even with the support from AI, such as the determination of recidivism rate and HR decisions. How can we stimulate the collaboration between AI and the domain experts?
+
+In many cases, what holds back the adoption of AI is the lack of manpower equipped with both domain and AI knowledge. Because people don't know how to describe their goal in an AI-interpretable way and how to interpret the result, AI is being ostracized! Can a system with proper UI solve this problem?
 
 ## Project Description
 
-##### What is CBT?
-
-CBT(Cognitive Behavioural Therapy) is a form of psychological treatment that has been demonstrated to be effective for a range of mental problems including depression and anxiety disorders. Numerous research results suggest that CBT leads to significant improvement in functioning and quality of life. In many studies, CBT has been demonstrated to be as effective as, or more effective than, other forms of psychological therapy or psychiatric medications. Thus, **we planned to bring this precious concept, CBT, into mobile applications, so that as many people as possible can have access to the treatment.**   *[Cite](https://www.apa.org/ptsd-guideline/patients-and-families/cognitive-behavioral)*
-
-##### What's Different from Other CBT Apps?
-
-Novelty of our research, **COLLABORATIVE LEARNING OF CBT SKILLS**, comes from the concept of **DBT(Dialectical Behavioural Therapy)**. DBT, a type of CBT, includes **group skills training** as part of its curriculum. Practicing psychological skills in a group has a positive effect on coping with mental problems since it provides the opportunity of polishing maladapted behaviours and chance for practicing the treatment in advance of the actual situation. In addition, it also improves personal engagement and self-awareness of group members. These positive aspects of group skills training have been proved by research among several domains such as borderline personality problems, and we are planning to expand the domain to anxiety problems. 
+The system that we designed has 3 major components to solve problems. **Task, Grammar and UI.** First of all, we are going to collect **tasks** that are AI supportable yet common across the industries at the same time.  After that, we are going to build a specific **grammar** structure which will help us to reduce tasks to certain AI workflows. Lastly, we are going to map these reduced tasks into specific **UI** components that will support users' interpretation toward both intrinsic model features and the model results. 
 
 ## Project Duration
 

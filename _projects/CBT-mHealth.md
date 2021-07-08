@@ -1,6 +1,6 @@
 ---
 layout:      project
-title:       Collaborative CBT App for People with Anxity Problems
+title:       Collaborative CBT App for for Anxity Problems
 date:        1 May 2021
 image:
   path:       /assets/img/projects/hello-i-m-nik-MrqlyH6J8Yw-unsplash.jpg
@@ -11,7 +11,7 @@ links:
 featured:    false
 ---
 
-# Collaborative CBT App for People with Anxity Problems
+# Collaborative CBT App for Anxity Problems
 ## Motivation
 
 How do you treat your anxiety? Life is overwhelming from time to time, and it is never easy to deal with those panic attacks in a non-toxic way. It is undeniable that life has its ups and downs, however, we still have a chance to cope with our downs in an adequate method. Do some meditations, clarify your feelings and their reasons, and plan how you will keep your face and let things just slide over next time when you face it. Above all, do all these things **TOGETHER**!
