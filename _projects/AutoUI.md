@@ -1,17 +1,17 @@
 ---
 layout:      project
-title:       AutoUI: Context-Aware Adaptive UI Generation for Working with AI 
+title:       AutoUI
 date:        1 July 2021
 image:
   path:       /assets/img/projects/franki-chamaki-1K6IQsQbizI-unsplash.jpg
 caption:     
 description: >
-  Collaborative mobile peer support platform for people with anxiety problems based on CBT and DBT theories
+ Context-Aware Adaptive UI Generation for Working with AI 
 links:
 featured:    false
 ---
 
-# AutoUI: Context-Aware Adaptive UI Generation for Working with AI 
+# AutoUI
 
 ## Motivation
 
@@ -29,15 +29,13 @@ Novelty of our research, **COLLABORATIVE LEARNING OF CBT SKILLS**, comes from th
 
 ## Project Duration
 
-Apr 2021 ~ Jan 2022(Expected)
+July 2021 ~ TBD
 
 ## Experiences
 
-Preliminary interview, formative study, storyboarding, writing, and system development (and much more to come!)
+Massiv amount of ideation until now...🤯 (and much more to come!)
 
 ## Additional Information
 
-* This project is advised by [**Prof. Hwajung Hong**](https://www.notion.so/Hwajung-Hong-cc10b0291bbe4ca38dbf4882cd687423)
-* This project is granted by [**SNU Undergraduate Research Grant Program**](https://sde.snu.ac.kr/bbs/content.php?co_id=support)
-  * US $5,000
+* This project is advised by [**Prof. Juho Kim**](https://juhokim.com/)
 
