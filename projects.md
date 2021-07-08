@@ -1,17 +1,8 @@
 ---
 layout: projects
 title: Projects
+show_collection: projects
 description: >
-Showcase for my personal/team projects
+  Research projects and development projects or Subeen Park
 no_groups: true
 ---
-
-```
-COMMING SOON!
-```
-
-> LIST OF UPCOMING STORIES
-
-- MasterPics --- Django, React
-- SNU Boards --- iOS
-- Yeonguham --- iOS + Service Design
