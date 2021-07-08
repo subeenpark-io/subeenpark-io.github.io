@@ -11,11 +11,12 @@ links:
 featured:    false
 ---
 
-### Motivation
+# Collaborative CBT App for People with Anxity Problems
+## Motivation
 
 How do you treat your anxiety? Life is overwhelming from time to time, and it is never easy to deal with those panic attacks in a non-toxic way. It is undeniable that life has its ups and downs, however, we still have a chance to cope with our downs in an adequate method. Do some meditations, clarify your feelings and their reasons, and plan how you will keep your face and let things just slide over next time when you face it. Above all, do all these things **TOGETHER**!
 
-### Project Description
+## Project Description
 
 ##### What is CBT?
 
@@ -25,7 +26,7 @@ CBT(Cognitive Behavioural Therapy) is a form of psychological treatment that has
 
 Novelty of our research, **COLLABORATIVE LEARNING OF CBT SKILLS**, comes from the concept of **DBT(Dialectical Behavioural Therapy)**. DBT, a type of CBT, includes **group skills training** as part of its curriculum. Practicing psychological skills in a group has a positive effect on coping with mental problems since it provides the opportunity of polishing maladapted behaviours and chance for practicing the treatment in advance of the actual situation. In addition, it also improves personal engagement and self-awareness of group members. These positive aspects of group skills training have been proved by research among several domains such as borderline personality problems, and we are planning to expand the domain to anxiety problems. 
 
-### Project Duration
+## Project Duration
 
 Apr 2021 ~ Jan 2022(Expected)
 
@@ -33,7 +34,7 @@ Apr 2021 ~ Jan 2022(Expected)
 
 Preliminary interview, formative study, storyboarding, writing, and system development (and much more to come!)
 
-### Additional Information
+## Additional Information
 
 * This project is advised by [**Prof. Hwajung Hong**](https://www.notion.so/Hwajung-Hong-cc10b0291bbe4ca38dbf4882cd687423)
 * This project is granted by [**SNU Undergraduate Research Grant Program**](https://sde.snu.ac.kr/bbs/content.php?co_id=support)

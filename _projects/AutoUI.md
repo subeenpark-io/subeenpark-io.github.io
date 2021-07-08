@@ -11,6 +11,8 @@ links:
 featured:    false
 ---
 
+# AutoUI: Context-Aware Adaptive UI Generation for Working with AI 
+
 ## Motivation
 
 How do you treat your anxiety? Life is overwhelming from time to time, and it is never easy to deal with those panic attacks in a non-toxic way. It is undeniable that life has its ups and downs, however, we still have a chance to cope with our downs in an adequate method. Do some meditations, clarify your feelings and their reasons, and plan how you will keep your face and let things just slide over next time when you face it. Above all, do all these things **TOGETHER**!
