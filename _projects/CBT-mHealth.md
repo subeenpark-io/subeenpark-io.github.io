@@ -1,6 +1,6 @@
 ---
 layout:      project
-title:       Collaborative CBT App for for Anxity Problems
+title:       Collaborative CBT App for for Anxiety Problems
 date:        1 May 2021
 image:
   path:       /assets/img/projects/hello-i-m-nik-MrqlyH6J8Yw-unsplash.jpg
