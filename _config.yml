@@ -60,6 +60,8 @@ menu:
     url: /projects/
   - title: Blog
     url: /blog/
+  - title: Paper Review
+    url: /blog/papers/
   - title: Dev-Log
     url: /blog/devs/
   # - title: About
