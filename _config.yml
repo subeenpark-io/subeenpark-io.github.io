@@ -316,6 +316,10 @@ collections:
     permalink: /blog/devs/:path/
     output: true
 
+  papers:
+  permalink: /blog/papers/:path/
+  output: true
+
   
 
 

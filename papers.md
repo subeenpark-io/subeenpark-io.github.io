@@ -1,9 +1,9 @@
 ---
 layout: list
-title: DEV-LOG
-show_collection: dev
+title: Paper Review
+show_collection: papers
 description: >
-  개발 기록
+  논문 리뷰
 no_groups: true
 # redirect_from:
 #   - /projects/
