@@ -1,7 +1,7 @@
 ---
 layout: list
 title: swiftUI
-slug: swiftui
+slug: swiftUI
 description: >
   About swiftUI.
 ---

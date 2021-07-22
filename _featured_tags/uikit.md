@@ -1,7 +1,7 @@
 ---
 layout: list
 title: UIKit
-slug: uikit
+slug: UIKit
 description: >
   About UIKit.
 ---
