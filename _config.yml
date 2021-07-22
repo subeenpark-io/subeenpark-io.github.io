@@ -317,8 +317,8 @@ collections:
     output: true
 
   papers:
-  permalink: /blog/papers/:path/
-  output: true
+    permalink: /blog/papers/:path/
+    output: true
 
   
 
