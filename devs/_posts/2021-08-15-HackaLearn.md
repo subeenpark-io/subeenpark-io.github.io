@@ -20,7 +20,6 @@ HackaLearn이 거의 다 끝나가서 쓰는 글! 배울게 산더미지만 그�
 
 
 1. this ordered seed list will be replaced by the toc
-
 {:toc}
 
 # HackaLearn이란? 
