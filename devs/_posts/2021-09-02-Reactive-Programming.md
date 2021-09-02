@@ -35,7 +35,7 @@ UIKit와 SwiftUI를 와리가리 하며 개발하다보니 UIKit를 쓸 때는 S
 
 비동기 작업을 처리하는 라이브러리가 고려해야 할 4가지 측면들
 
-![Untitled](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Untitled%201.png)
+![The Evaluation Matrix]( /assets/img/blog/2021-09-02-Reactive-Programming/1_EvaluationMatrix.png)
 
 **Explicit execution**
 
@@ -67,13 +67,17 @@ UIKit와 SwiftUI를 와리가리 하며 개발하다보니 UIKit를 쓸 때는 S
 
 > Reactive programming is a **programming paradigm** oriented around **data flows and the propagation of change**. This means that it should be possible to express static or dynamic data flows with ease in the programming languages used, and that the underlying execution model will automatically propagate changes through the data flow.
 
-![Screen Shot 2021-08-29 at 2.00.25 AM.png](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Screen_Shot_2021-08-29_at_2.00.25_AM.png)
+![Definition of Reactive Programming from Reactive Manifesto]( /assets/img/blog/2021-09-02-Reactive-Programming/2_Wikipedia.png)
+
+![Definition of Reactive Programming from Wikipedia](/assets/img/blog/2021-09-02-Reactive-Programming/2_Screen Shot 2021-08-29 at 2.00.25 AM.png)
 
 → MS에서 Rx를 만들던 조직에 있던 에릭 메이허가 2014 리액트 컨퍼런스에서 발표한 자료. 위키피디아 말대로라면 아래 있는 코드도 반응형 아니냐고 하는데... 또 틀린 말은 아님. 이외에 다른 사람들도 기존에 MV* 형태의 아키텍쳐에서 사용해오던 것과 뭐가 다르냐는 의견이 대다수. 
 
 ### Reactive Manifesto
 
-![Untitled](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Untitled%202.png)
+
+
+![Definition of Reactive Programming from Reactive Manifesto]( /assets/img/blog/2021-09-02-Reactive-Programming/3_ReactiveManifesto.png)
 
 > **Responsive** (응답성)가능한 한 즉각적으로 응답하는 것을 말합니다. 사용자의 입장에서 가장 중요한 항목이 되겠지요. 소프트웨어는 당연히 사용자가 필요로 할 때 빠르게 응답해야 합니다. 응답성은 Reactive Manifesto의 4가지 속성 중 가장 중요하고, 나머지 아래 3가지 요소는 응답성을 위하여 존재하는 하위 요소입니다.
 
@@ -89,14 +93,15 @@ UIKit와 SwiftUI를 와리가리 하며 개발하다보니 UIKit를 쓸 때는 S
 
 > Reactive, what an overloaded word. Many things turn out to become magically Reactive these days. In this post, we are going to talk about **Reactive Programming**, i.e. a **development model structured around asynchronous data streams**.
 
-![Untitled](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Untitled%203.png)
+![4 Fundamental Side Effects]( /assets/img/blog/2021-09-02-Reactive-Programming/4_DefinitionMatrix.png)
+
 
 - 개인적으로 가장 공감이 갔던 정의. 결국 비동기 데이터 스트림을 어떻게 대할 것인지에 대한 방법론 중 하나가 반응형 프로그래밍인 것 같음.
 - 더해서 이전에도 비동기 이벤트 스트림을 관찰하고 사이트 이펙트를 실행하는 방식이 없었던 것은 아니지만 처리 방식에 대한 아이디어 중 손에 꼽게 강력하다는 것!!
 
 ### 주섬주섬 합쳐보자면
 
-![Untitled](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Untitled%204.png)
+![Reactive Programming]( /assets/img/blog/2021-09-02-Reactive-Programming/5_Summary.png)
 
 - 리액티브 시스템
 
@@ -117,7 +122,7 @@ UIKit와 SwiftUI를 와리가리 하며 개발하다보니 UIKit를 쓸 때는 S
 
 ---
 
-![Untitled](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Untitled%205.png)
+![Click Stream]( /assets/img/blog/2021-09-02-Reactive-Programming/6_Clickstream.png)
 
 - 반응형 프로그래밍을 흔히 **비동기적인 데이터 스트림에 관한 것**이라고 많이 부르는데, 데이터 스트림이 우리가 일반적으로 생각하는 것과는 조금 다르다.
 
@@ -142,7 +147,9 @@ UIKit와 SwiftUI를 와리가리 하며 개발하다보니 UIKit를 쓸 때는 S
 
 ### 오리지널 클릭 스트림
 
-![Untitled](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Untitled%206.png)
+![Marble Diagram of an Original Click Stream]( /assets/img/blog/2021-09-02-Reactive-Programming/7_MarbleDiagram.png)
+
+
 
 ```python
 --a---b-c---d---X---|->
@@ -173,7 +180,9 @@ counterStream: ---1----2--3----4------5--> # new stream 2
 
 Stateful 한 방식으로 코딩한다고 생각하면 어질어질...
 
-![Untitled](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Untitled%207.png)
+![Marble Diagram of an Double Click Stream]( /assets/img/blog/2021-09-02-Reactive-Programming/8_DoubleClickStream.png)
+
+
 
 - 회색: 하나의 스트림을 다른 스트림으로 변형하는 함수
 - throttle: 250 ms 동안 추가적인 event가 발생하지 않으면 지금까지의 클릭을 리스트로 변환
@@ -215,7 +224,9 @@ Stateful 한 방식으로 코딩한다고 생각하면 어질어질...
     - Throttling과 Debouncing 같은 것들의 구현 방법이 딱히 없었음.
         - 막간을 이용한 얼탱이 없는 [웹사이트](https://cse.snu.ac.kr/search/node/%EC%9E%A5%ED%95%99%20OR%20%EA%B5%90%ED%99%98%ED%95%99%EC%83%9D)..를 보여드리려고 했는데 그새 버그를 고쳤네용. 아숩. 약간 이런거였어요
 
-        ![Untitled](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Untitled%208.png)
+        ![Pull and Push]( /assets/img/blog/2021-09-02-Reactive-Programming/9_PullandPush.png)
+        
+        
 
     - 서버 사이드에선 concurrency를 보장할 방법이 필요했음. RxJava도 그래서 넷플릭스에서 만들었다고 한다
 
@@ -257,9 +268,10 @@ Stateful 한 방식으로 코딩한다고 생각하면 어질어질...
 - **데이터 생산자(Data producer)와 데이터 소비자(Data Consumer)가 통신하는 프로토콜의 두 가지 종류**
     - 여기서 주의해야 할 점은 Data producer/consumer은 서버-클라이언트와 같은 개념이 아님. Rx에서 말하는 데이터 생산자와 소비자는 각각 **데이터 변경을 수행하는 이벤트**와 **데이터 변경 이벤트를 처리하는 것**을 말함.
 
-![Screen Shot 2021-08-29 at 1.41.15 AM.png](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Screen_Shot_2021-08-29_at_1.41.15_AM.png)
 
-![Untitled](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Untitled%209.png)
+
+![]( /assets/img/blog/2021-09-02-Reactive-Programming/PullPushSummary.png)
+![Pull and Push]( /assets/img/blog/2021-09-02-Reactive-Programming/9_PullandPush.png)
 
 - Pull: function, iterator
     - 프로그램이 외부 환경의 명령에 의해서 원하는 결과를 획득하는 방식
@@ -280,9 +292,7 @@ Stateful 한 방식으로 코딩한다고 생각하면 어질어질...
             - 여러 값을 생산 후 observer에게 push
         - 예3. 비동기 request를 던지고, 외부데이터 스트림에 대한 subscribe형식으로 유입에 반응하도록 처리(기다리지 않는 대신 오면 반응)
 
-    ![Untitled](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Untitled%2010.png)
-
-    pull과 push의 차이를 잘 보여주는 표
+![Pull and Push Table]( /assets/img/blog/2021-09-02-Reactive-Programming/10_PullandPushTable.png)
 
 ## Observable의 종류 두 가지
 
@@ -306,7 +316,11 @@ Stateful 한 방식으로 코딩한다고 생각하면 어질어질...
 
 ---
 
-![Untitled](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Untitled%2011.png)
+![Twitter Recommendation Tab]( /assets/img/blog/2021-09-02-Reactive-Programming/11_RecommendationTab.png)
+
+
+
+
 
 트위터 사용자 추천 탭을 만들어보자
 
@@ -372,7 +386,9 @@ Stateful 한 방식으로 코딩한다고 생각하면 어질어질...
     - responseStream이 requestStream에 dependent 한 부분이 문제가 되는 것. 한 스트림을 다른 스트림으로 변환하는 map을 이용해서 metaStream을 만들었다.
     - 이를 통해서 각 URL을 리스폰스가 담긴 프로미스 스트림으로 매핑할 수 있음!
 
-    ![Untitled](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Untitled%2012.png)
+![Request Stream]( /assets/img/blog/2021-09-02-Reactive-Programming/12_RequestStream.png)
+    
+
 
 4. JSON 객체에 대한 프로미스를 받는 대신 그냥 바로 JSON 객체를 받으려면?
 
@@ -385,7 +401,7 @@ var responseStream = requestStream
 
 - Flatmap: map()의 한 종류, 메타 스트림을 flatten 시킴(단일 원소 스트림을 반환)
 
-![Untitled](Reactive%20Programming%20f838fe079a05412cb38298cd77a790af/Untitled%2013.png)
+![Meta Request Stream]( /assets/img/blog/2021-09-02-Reactive-Programming/13_RequestStream.png)
 
 - 드디어 리스폰스 스트림이 완성!
 
